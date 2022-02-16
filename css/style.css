@@ -1,0 +1,596 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  max-width: 1170px;
+  text-align: center;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  grid-gap: 0px;
+}
+.grid-main {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: left;
+}
+.grid-about {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: left;
+  justify-self: left;
+}
+.grid-logo {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: center;
+}
+.grid-icons {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  justify-self: right;
+}
+.top {
+  height: 100px;
+}
+.top2 {
+  display: flex;
+  margin-left: 70px;
+}
+.top > div > a {
+  text-decoration: none;
+  color: #000;
+  width: auto;
+}
+.top > div > a:hover {
+  background-color: #094f7f;
+  color: #fff;
+}
+a:hover {
+  background-color: #e48810;
+  color: #000;
+  border: #fff;
+  text-align: center;
+  transition: 0.2s;
+}
+
+a:visited {
+  color: #094f7f;
+  border: #fff;
+  transition: 0.2s;
+}
+.down {
+  padding-top: 40px;
+}
+.dropdownactivate {
+  display: none;
+}
+.menubtn {
+  display: block;
+  width: 68px;
+  height: 68px;
+  background-repeat: no-repeat;
+  background-image: url(../img/menu_mob.svg);
+  background-size: cover;
+}
+
+.dropdown {
+  display: none;
+  position: fixed;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  right: 10px;
+  width: 375px;
+  background-color: white;
+  text-align: center;
+}
+
+.social1 {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: right;
+}
+.social-item1 {
+  padding-top: 10px;
+  margin-left: 67px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: right;
+}
+.social-item {
+  padding-top: 10px;
+  margin-left: 67px;
+}
+.social-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.fb {
+  background-repeat: no-repeat;
+  background-image: url(../img/fb.svg);
+}
+.instagram {
+  background-repeat: no-repeat;
+  background-image: url(../img/instagram.svg);
+}
+.telegram {
+  background-repeat: no-repeat;
+  background-image: url(../img/telegram.svg);
+}
+.banner {
+  background-image: url(../img/main_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  color: #fff;
+  text-align: center;
+}
+.title {
+  font-size: 42px;
+  font-weight: 800;
+  width: 400px;
+  margin: 100px auto 0px auto;
+}
+.text {
+  margin: 5px auto;
+  padding-bottom: 40px;
+}
+.logostyle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.logoinfo {
+  display: block;
+  width: 142px;
+  text-align: center;
+  font-size: 12px;
+  align-items: center;
+}
+.logoinfomain {
+  font-size: 24px;
+}
+.logoimage {
+  display: block;
+  width: 68px;
+  height: 68px;
+  background-image: url(../img/logo.svg);
+}
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  grid-gap: 15px;
+}
+.grid1-map {
+  display: flex;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.grid1-rope {
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.grid1-btn {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  padding-left: 180px;
+}
+.menu {
+  background-color: #fff;
+  color: #000;
+  max-width: 785px;
+  height: 80px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.mapimage {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/way.svg);
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+.ropeimage {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/rope.svg);
+  background-repeat: no-repeat;
+  margin-top: 25px;
+  margin-left: 0;
+}
+.downmenu {
+  margin: 0px;
+  padding-left: 0px;
+  padding-top: 25px;
+}
+
+.btn {
+  background-color: #094f7f;
+  color: #fff;
+  font-size: 20px;
+  height: 56px;
+  width: 240px;
+  margin: 10px;
+  padding-top: 5px;
+}
+.btn:hover {
+  background-color: #e48810;
+  color: #000;
+  border: #fff;
+  transition: 0.2s;
+}
+.btn1 {
+  background-color: #094f7f;
+  color: #fff;
+  font-size: 20px;
+  height: 56px;
+  width: 240px;
+  margin: 10px;
+  padding-top: 5px;
+}
+.btn1:hover {
+  background-color: #e48810;
+  color: #000;
+  border: #fff;
+  transition: 0.2s;
+}
+.banner2 {
+  display: flex;
+  max-width: 1088px;
+  height: 448px;
+  text-align: center;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin: 70px auto;
+}
+.section2img {
+  display: block;
+  width: 620px;
+  height: 448px;
+  background-image: url(../img/section2.svg);
+}
+.section2 {
+  font-size: 42px;
+  text-align: center;
+  width: 385px;
+  margin: 30px;
+}
+.section2info {
+  font-size: 26px;
+  text-align: center;
+  width: 385px;
+  margin: 30px;
+}
+.trainee {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  height: 320px;
+  text-align: center;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.profi {
+  background-image: url(../img/profi.png);
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 253px;
+  width: 350px;
+  padding-top: 200px;
+  margin-top: 30px;
+}
+
+.amateur {
+  background-image: url(../img/amateur.png);
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 253px;
+  width: 380px;
+  padding-top: 200px;
+  margin-top: 30px;
+}
+.experience {
+  background-image: url(../img/experience.png);
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 253px;
+  width: 380px;
+  padding-top: 200px;
+  margin-top: 30px;
+}
+
+.banner4 {
+  background-image: url(../img/section4_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.text_foot {
+  color: #fff;
+  font-size: 26px;
+  margin-right: 885px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  max-width: 785px;
+  height: 80px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 55px auto 5px;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+@media (max-width: 1160px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+  .banner2 {
+    display: flex;
+    max-width: 800px;
+    height: 389px;
+    text-align: center;
+    padding-right: 15px;
+    margin: 35px auto 10px 0px;
+  }
+  .top2 {
+    margin-left: 0px;
+  }
+  .section2img {
+    display: block;
+    width: 561px;
+    height: 389px;
+    background-image: url(../img/section2.svg);
+  }
+  .section2 {
+    font-size: 32px;
+    text-align: center;
+    width: 320px;
+    margin: 20px;
+  }
+  .section2info {
+    font-size: 20px;
+    text-align: center;
+    width: 320px;
+    margin: 20px;
+  }
+  .trainee {
+    max-width: 880px;
+    height: 320px;
+    font-size: 20px;
+  }
+  .profi {
+    height: 195px;
+    width: 285px;
+    margin-top: 30px;
+  }
+
+  .amateur {
+    height: 195px;
+    width: 285px;
+  }
+  .experience {
+    height: 195px;
+    width: 285px;
+  }
+  .text_foot {
+    font-size: 20px;
+    margin-right: 70%;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+@media (max-width: 940px) {
+  .wrapper {
+    max-width: 375px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-gap: 0px;
+    justify-self: space-between;
+    margin-bottom: 48px;
+  }
+  .grid-main {
+    display: none;
+  }
+  .grid-about {
+    display: none;
+  }
+  .grid-logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 24px;
+  }
+  .logoinfo_mob {
+    display: none;
+  }
+
+  .social-item {
+    display: none;
+  }
+  .dropdownactivate {
+    display: block;
+    height: 300px;
+  }
+
+  .dropdownactivate:hover .dropdown {
+    display: block;
+  }
+  .banner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .title {
+    font-size: 24px;
+    color: #000;
+    max-width: 230px;
+    margin: 0px auto;
+    padding: 0px;
+  }
+  .text {
+    font-size: 16px;
+    color: #000;
+  }
+  .grid1 {
+    grid-template-columns: repeat (3, 1fr);
+    grid-gap: 5px;
+    justify-content: center;
+  }
+  .grid1-map {
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .grid1-rope {
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .btn1 {
+    width: 150px;
+  }
+  .grid1-btn {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-left: 20%;
+  }
+  .downmenu {
+    padding-top: 20px;
+  }
+
+  .textmenu {
+    display: none;
+  }
+
+  .mapimage {
+    width: 50px;
+    height: 50px;
+    margin-top: 60%;
+  }
+  .ropeimage {
+    margin-top: 60%;
+    width: 50px;
+    height: 50px;
+  }
+  .section2img {
+    display: none;
+  }
+  .banner2 {
+    display: flex;
+    max-width: 375px;
+    height: 310px;
+    text-align: center;
+    background-image: url(../img/section2.svg);
+    padding-left: 15%;
+    padding-right: 5px;
+    margin: 18px auto;
+  }
+  .section2 {
+    font-size: 24px;
+    text-align: center;
+    width: 240px;
+    margin: 20px auto;
+    color: white;
+  }
+  .section2info {
+    font-size: 16px;
+    text-align: center;
+    width: 240px;
+    margin: 20px auto;
+    color: white;
+  }
+  .menu {
+    max-width: 315px;
+    height: 80px;
+    padding-left: 0px;
+  }
+  .trainee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 375px;
+    height: 710px;
+    text-align: center;
+    margin: 15px auto;
+    padding: 20px;
+    list-style-type: none;
+  }
+  .profi {
+    height: 195px;
+    width: 315px;
+    padding-top: 55%;
+    margin-top: 25px;
+  }
+
+  .amateur {
+    height: 195px;
+    width: 315px;
+    padding-top: 55%;
+    margin-top: 25px;
+  }
+  .experience {
+    height: 195px;
+    width: 315px;
+    padding-top: 55%;
+    margin-top: 25px;
+  }
+  .banner4 {
+    height: 210px;
+    padding: 35px 0px;
+    margin: 20px 0px;
+    justify-content: center;
+  }
+  .text_foot {
+    font-size: 16px;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    justify-content: center;
+  }
+  .footer {
+    margin: 0px auto 5px;
+    justify-content: center;
+    background-color: transparent;
+  }
+  #footer-logostyle {
+    display: none;
+  }
+}

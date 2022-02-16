@@ -1,0 +1,320 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  max-width: 1170px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  grid-gap: 0px;
+}
+.grid-main {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: left;
+}
+.grid-about {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: left;
+  justify-self: left;
+}
+.grid-logo {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: center;
+}
+.grid-icons {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  justify-self: right;
+}
+
+.top {
+  height: 100px;
+}
+.top2 {
+  display: flex;
+  margin-left: 70px;
+}
+.top > div > a {
+  text-decoration: none;
+  color: #000;
+  width: auto;
+}
+.top > div > a:hover {
+  background-color: #094f7f;
+  color: #fff;
+}
+a:hover {
+  background-color: #e48810;
+  color: #000;
+  border: #fff;
+  transition: 0.2s;
+}
+
+a:visited {
+  color: #094f7f;
+  border: #fff;
+  transition: 0.2s;
+}
+.down {
+  padding-top: 40px;
+}
+.dropdownactivate {
+  display: none;
+}
+.menubtn {
+  display: block;
+  width: 68px;
+  height: 68px;
+  background-repeat: no-repeat;
+  background-image: url(../img/menu_mob.svg);
+  background-size: cover;
+}
+
+.dropdown {
+  display: none;
+  position: fixed;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  right: 10px;
+  width: 375px;
+  background-color: white;
+  text-align: center;
+}
+
+.social1 {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: right;
+}
+.social-item1 {
+  padding-top: 10px;
+  margin-left: 67px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: right;
+}
+.social-item {
+  padding-top: 10px;
+  margin-left: 67px;
+}
+.social-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.fb {
+  background-repeat: no-repeat;
+  background-image: url(../img/fb.svg);
+}
+.instagram {
+  background-repeat: no-repeat;
+  background-image: url(../img/instagram.svg);
+}
+.telegram {
+  background-repeat: no-repeat;
+  background-image: url(../img/telegram.svg);
+}
+.banner {
+  background-image: url(../img/info_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #000;
+}
+.title {
+  font-size: 46px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.logostyle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.logoinfo {
+  display: block;
+  width: 142px;
+  text-align: center;
+  font-size: 12px;
+  align-items: center;
+}
+.logoinfomain {
+  font-size: 24px;
+}
+.logoimage {
+  display: block;
+  width: 68px;
+  height: 68px;
+  background-image: url(../img/logo.svg);
+}
+
+.mapimage {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-image: url(../img/planning.svg);
+}
+
+.ropeimage {
+  display: block;
+  width: 60px;
+  height: 65px;
+  padding-right: 35px;
+  padding-bottom: 10px;
+  background-image: url(../img/rope.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cliffimage {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-image: url(../img/cliff.svg);
+}
+
+.btn {
+  background-color: #094f7f;
+  color: #fff;
+  font-size: 20px;
+  height: 56px;
+  width: 240px;
+  margin: 10px;
+  padding-top: 5px;
+}
+.btn:hover {
+  background-color: #e48810;
+  color: #000;
+  border: #fff;
+  transition: 0.2s;
+}
+.advantage {
+  max-width: 560px;
+  height: 260px;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 26px;
+}
+.advantageblocks {
+  text-align: left;
+  display: flex;
+  max-width: 550px;
+}
+
+.footer {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  max-width: 785px;
+  height: 80px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 55px auto 5px;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+@media (max-width: 730px) {
+  .wrapper {
+    max-width: 375px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-gap: 0px;
+    justify-self: space-between;
+    margin-bottom: 48px;
+  }
+  .grid-main {
+    display: none;
+  }
+  .grid-about {
+    display: none;
+  }
+  .grid-logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 24px;
+  }
+  .logoinfo_mob {
+    display: none;
+  }
+  .logoinfomain {
+    font-size: 24px;
+    width: 97px;
+    justify-self: center;
+    text-align: center;
+  }
+  .social-item {
+    display: none;
+  }
+  .dropdownactivate {
+    display: block;
+    height: 300px;
+  }
+
+  .dropdownactivate:hover .dropdown {
+    display: block;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .mapimage {
+    margin-right: 0px;
+    padding-right: 27px;
+  }
+
+  .ropeimage {
+    width: 50px;
+    height: 55px;
+    padding-right: 45px;
+  }
+  .cliffimage {
+    margin-right: 0px;
+    padding-right: 27px;
+  }
+  .advantage {
+    max-width: 255px;
+    height: 280px;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 16px;
+  }
+  .advantageblocks {
+    text-align: left;
+    display: flex;
+    max-width: 255px;
+  }
+  .footer {
+    justify-content: center;
+    background-color: transparent;
+  }
+  #footer-logostyle {
+    display: none;
+  }
+}
